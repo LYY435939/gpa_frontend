@@ -1,0 +1,59 @@
+{
+	"name": "sanhangbei_seed_system",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build",
+		"lint": "vue-cli-service lint"
+	},
+	"dependencies": {
+		"@ant-design/icons-vue": "^6.1.0",
+		"@element-plus/icons-vue": "^2.0.10",
+		"ant-design-vue": "^4.0.2",
+		"antd": "^5.8.5",
+		"axios": "^1.2.1",
+		"compression-webpack-plugin": "^6.1.1",
+		"core-js": "^3.8.3",
+		"echarts": "^5.4.1",
+		"element-plus": "^2.2.26",
+		"querystring": "^0.2.1",
+		"vue": "^3.2.13",
+		"vue-router": "^4.1.6"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.12.16",
+		"@babel/eslint-parser": "^7.12.16",
+		"@types/ace": "^0.0.48",
+		"@vue/cli-plugin-babel": "~5.0.0",
+		"@vue/cli-plugin-eslint": "~5.0.0",
+		"@vue/cli-service": "~5.0.0",
+		"eslint": "^7.32.0",
+		"eslint-plugin-vue": "^8.0.3",
+		"less-loader": "^6.0.0",
+		"sass-loader": "^13.2.0"
+	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"node": true
+		},
+		"extends": [
+			"plugin:vue/vue3-essential",
+			"eslint:recommended"
+		],
+		"parserOptions": {
+			"parser": "@babel/eslint-parser"
+		},
+		"rules": {
+			"vue/no-unused-components": "off",
+			"no-unused-vars": "off"
+		}
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not dead",
+		"not ie 11"
+	]
+}
