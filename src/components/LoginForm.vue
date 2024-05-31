@@ -8,7 +8,7 @@
     <el-form-item label="学号" prop="username">
       <el-input
           v-model="form.username"
-          type=""
+          type="text"
           placeholder="请输入学号"
           autocomplete="on"/>
     </el-form-item>
@@ -162,6 +162,7 @@
 
 <script>
 import api from "../api/index";
+import encrypt from "../utils/crypt"
 
 export default {
   name: "LoginForm",
@@ -208,6 +209,7 @@ export default {
 
   },
   created() {
+
     let key = localStorage.getItem("key");
     if (key !== null) {
       key = JSON.parse(key);
@@ -253,6 +255,9 @@ export default {
           if (this.checked) {
             this.changeButtonState();
             this.$message.info("请求中，请等待");
+            if (this.form.password.indexOf("__RSA__") !== 0) {
+              this.form.password = "__RSA__" + encrypt.encrypt(this.form.password)
+            }
             api.loginMFA({
               username: this.form.username,
               password: this.form.password,

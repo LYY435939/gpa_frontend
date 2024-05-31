@@ -5,7 +5,7 @@ module.exports = defineConfig({
     devServer: {
         proxy: {
             '/api-gpa': {
-                target: "http://162.14.112.199:8000",
+                target: "https://www.study-npuer.com",
                 changeOrigin: true,
                 secure: false,
                 ws: true,

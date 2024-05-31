@@ -19,7 +19,8 @@
 		"element-plus": "^2.2.26",
 		"querystring": "^0.2.1",
 		"vue": "^3.2.13",
-		"vue-router": "^4.1.6"
+		"vue-router": "^4.1.6",
+		"jsencrypt": "^3.3.2"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.16",
